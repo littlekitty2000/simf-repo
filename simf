@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# SimpleFetch V1.0.0
-# 
+# Config
+sfversion="V1.1.0"
 # Traps
 trap "echo ERR 403" SIGINT
 trap "echo ERR 403" SIGTERM
@@ -11,6 +11,7 @@ arch=$(arch)
 uname=$(uname -o)
 oss=$(lsb_release -sd 2>/dev/null)
 # Display
+echo SimpleFetch $sfversion...
 echo whoami= $whoami
 echo pwd= $pwd
 echo arch= $arch
