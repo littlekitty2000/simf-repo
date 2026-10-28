@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# SimpleFetch V1.0.0
+# 
+# Traps
+trap "echo ERR 403" SIGINT
+trap "echo ERR 403" SIGTERM
+# Vars
+whoami=$(whoami)
+pwd=$(pwd)
+arch=$(arch)
+uname=$(uname -o)
+oss=$(lsb_release -sd 2>/dev/null)
+# Display
+echo whoami= $whoami
+echo pwd= $pwd
+echo arch= $arch
+echo uname= $uname
+echo lsb_release= $oss
+# I'm really starting to enjoy Marilyn Manson lol.
+# -LK2
